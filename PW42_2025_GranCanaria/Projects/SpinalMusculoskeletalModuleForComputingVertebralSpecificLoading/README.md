@@ -85,7 +85,13 @@ TBD
 
 
 1. Describe specific steps you **have actually done**.
-TBD
+We used points / landmarks identified from segmentations of vertebrae (joint centroids, body centroids, etc.) to automatically define local coordinate frames (origins and relative orientation) needed to define vertebral bodies and intervertebral joints in a subject-specific biomechanical model in OpenSim.  Output into the OpenSim model was successfully achieved. 
+Future efforts / next steps:
+  a) Considering multiple methods for identifying the points  and landmarks used.
+  b) Display of the resulting frames (joint centers and axes) in slicer with associated spine segmentations - potentially add methods for viewing and correction prior to exporting to OpenSim model.
+  c) Explore possibilities for improving visualization and QA of the OpenSim models:
+    i) Export vertebral segmentations into files and use in OpenSim visualizer - currently these are displayed from scaled generic vtk files.
+    ii) Open / visualize OpenSim models in a Slicer window for side by side comparisons.  
 
 
 
